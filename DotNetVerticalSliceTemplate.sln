@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6A90854D-A6E3-473D-ADD8-8FE549DE37F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{35272C66-4E46-4887-A940-1BADDF85BD0D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{0D45B8A9-843F-4A90-8EDC-577CB2AE8D29}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateways", "Gateways", "{2972D75B-4B48-454D-B499-C45C2A977CDD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{DD10870E-B1B7-4F1F-BABE-C7A1B1DD9890}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Product", "Product", "{14EEF654-57FB-476C-BE5F-17DE55B32C53}"
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0D45B8A9-843F-4A90-8EDC-577CB2AE8D29} = {6A90854D-A6E3-473D-ADD8-8FE549DE37F7}
+		{2972D75B-4B48-454D-B499-C45C2A977CDD} = {6A90854D-A6E3-473D-ADD8-8FE549DE37F7}
+		{DD10870E-B1B7-4F1F-BABE-C7A1B1DD9890} = {6A90854D-A6E3-473D-ADD8-8FE549DE37F7}
+		{14EEF654-57FB-476C-BE5F-17DE55B32C53} = {DD10870E-B1B7-4F1F-BABE-C7A1B1DD9890}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C80D3D43-5F69-4A2B-8928-B2905B1B32BC}
+	EndGlobalSection
+EndGlobal
