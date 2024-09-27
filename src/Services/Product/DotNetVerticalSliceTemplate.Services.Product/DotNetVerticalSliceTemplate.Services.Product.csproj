@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Product\Commands\CreateProduct\v1\" />
+    <Folder Include="Features\Product\Commands\DeleteProduct\v1\" />
+    <Folder Include="Features\Product\Commands\UpdateProduct\v1\" />
+    <Folder Include="Features\Product\Domain\Entities\" />
+    <Folder Include="Features\Product\Domain\Enums\" />
+    <Folder Include="Features\Product\Domain\Events\" />
+    <Folder Include="Features\Product\Domain\Factories\" />
+    <Folder Include="Features\Product\Domain\Specifications\" />
+    <Folder Include="Features\Product\Domain\Services\" />
+    <Folder Include="Features\Product\Domain\Repositories\" />
+    <Folder Include="Features\Product\Domain\ValueObjects\" />
+    <Folder Include="Features\Product\EventHandlers\" />
+    <Folder Include="Features\Product\Queries\GetProductById\v1\" />
+    <Folder Include="Features\Product\Mappings\" />
+    <Folder Include="Features\Product\Queries\GetProductsByPage\v1\" />
+    <Folder Include="Features\Product\Validators\" />
+    <Folder Include="Infrastructure\Persistence\DbContexts\" />
+    <Folder Include="Infrastructure\Persistence\Mappings\" />
+    <Folder Include="Infrastructure\Persistence\Repositories\" />
+  </ItemGroup>
+
+</Project>

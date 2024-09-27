@@ -1,0 +1,6 @@
+@DotNetVerticalSliceTemplate.Services.Product.Api_HostAddress = http://localhost:5094
+
+GET {{DotNetVerticalSliceTemplate.Services.Product.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetVerticalSliceTemplate.Services.Product", "DotNetVerticalSliceTemplate.Services.Product\DotNetVerticalSliceTemplate.Services.Product.csproj", "{9E407654-273A-44DE-8205-544CCA9F8B94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetVerticalSliceTemplate.Services.Product.Api", "DotNetVerticalSliceTemplate.Services.Product.Api\DotNetVerticalSliceTemplate.Services.Product.Api.csproj", "{A3C61D94-4922-446E-8440-AB537D73E612}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E407654-273A-44DE-8205-544CCA9F8B94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E407654-273A-44DE-8205-544CCA9F8B94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E407654-273A-44DE-8205-544CCA9F8B94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E407654-273A-44DE-8205-544CCA9F8B94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3C61D94-4922-446E-8440-AB537D73E612}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3C61D94-4922-446E-8440-AB537D73E612}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3C61D94-4922-446E-8440-AB537D73E612}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3C61D94-4922-446E-8440-AB537D73E612}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {69B8D09E-FCD8-4C28-9E03-46E4CC779251}
+	EndGlobalSection
+EndGlobal
