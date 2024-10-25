@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{AE58203E-EC57-41AC-B296-48029C822A1B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{C6BE6BF8-3129-47FF-B863-017F19C303E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateways", "Gateways", "{DD5F016F-8D7D-4CE5-AE15-B1D7B7D14353}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{6AA880FF-F62C-4495-AB5D-2D368BE50203}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{C5C6EB8E-E53F-4895-9AF3-146D16374DE2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Product", "Product", "{568B270D-F5C3-4DF0-AB87-3C9479DE81F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetVerticalSliceTemplate.Shared", "src\Shared\DotNetVerticalSliceTemplate.Shared\DotNetVerticalSliceTemplate.Shared.csproj", "{D81A50A0-C1AB-4EBA-ACB5-88439C5726D3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetVerticalSliceTemplate.Services.Product", "src\Services\Product\DotNetVerticalSliceTemplate.Services.Product\DotNetVerticalSliceTemplate.Services.Product.csproj", "{85D66C98-8EBA-4768-B5C6-D4784D9F2C6D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetVerticalSliceTemplate.Services.Product.Api", "src\Services\Product\DotNetVerticalSliceTemplate.Services.Product.Api\DotNetVerticalSliceTemplate.Services.Product.Api.csproj", "{7A2DF486-2E12-4B29-91F5-B9CD7BE7678B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D81A50A0-C1AB-4EBA-ACB5-88439C5726D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D81A50A0-C1AB-4EBA-ACB5-88439C5726D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D81A50A0-C1AB-4EBA-ACB5-88439C5726D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D81A50A0-C1AB-4EBA-ACB5-88439C5726D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85D66C98-8EBA-4768-B5C6-D4784D9F2C6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85D66C98-8EBA-4768-B5C6-D4784D9F2C6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85D66C98-8EBA-4768-B5C6-D4784D9F2C6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85D66C98-8EBA-4768-B5C6-D4784D9F2C6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A2DF486-2E12-4B29-91F5-B9CD7BE7678B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A2DF486-2E12-4B29-91F5-B9CD7BE7678B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A2DF486-2E12-4B29-91F5-B9CD7BE7678B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A2DF486-2E12-4B29-91F5-B9CD7BE7678B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DD5F016F-8D7D-4CE5-AE15-B1D7B7D14353} = {AE58203E-EC57-41AC-B296-48029C822A1B}
+		{6AA880FF-F62C-4495-AB5D-2D368BE50203} = {AE58203E-EC57-41AC-B296-48029C822A1B}
+		{C5C6EB8E-E53F-4895-9AF3-146D16374DE2} = {AE58203E-EC57-41AC-B296-48029C822A1B}
+		{568B270D-F5C3-4DF0-AB87-3C9479DE81F7} = {6AA880FF-F62C-4495-AB5D-2D368BE50203}
+		{D81A50A0-C1AB-4EBA-ACB5-88439C5726D3} = {C5C6EB8E-E53F-4895-9AF3-146D16374DE2}
+		{85D66C98-8EBA-4768-B5C6-D4784D9F2C6D} = {568B270D-F5C3-4DF0-AB87-3C9479DE81F7}
+		{7A2DF486-2E12-4B29-91F5-B9CD7BE7678B} = {568B270D-F5C3-4DF0-AB87-3C9479DE81F7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1921FBC2-C5C8-4730-9E36-DBEF75832604}
+	EndGlobalSection
+EndGlobal
