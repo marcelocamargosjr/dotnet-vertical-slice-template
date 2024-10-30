@@ -1,12 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace DotNetVerticalSliceTemplate.Services.Product.Domain.Entities;
 
-namespace DotNetVerticalSliceTemplate.Services.Product.Domain.Entities
+internal class Product
 {
-    internal class Product
-    {
-    }
 }

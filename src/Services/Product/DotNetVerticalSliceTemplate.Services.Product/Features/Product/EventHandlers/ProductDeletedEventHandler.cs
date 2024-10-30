@@ -1,12 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace DotNetVerticalSliceTemplate.Services.Product.Features.Product.EventHandlers;
 
-namespace DotNetVerticalSliceTemplate.Services.Product.Features.Product.EventHandlers
+internal class ProductDeletedEventHandler
 {
-    internal class ProductDeletedEventHandler
-    {
-    }
 }
