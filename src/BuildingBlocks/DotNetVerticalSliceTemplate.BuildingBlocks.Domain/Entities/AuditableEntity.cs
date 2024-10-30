@@ -2,10 +2,8 @@
 
 namespace DotNetVerticalSliceTemplate.BuildingBlocks.Domain.Entities;
 
-public abstract class AuditableEntity<TKey> : IHasKey<TKey>, ITrackable
+public abstract class AuditableEntity<TKey> : Entity<TKey>, ITrackable
 {
-    public TKey Id { get; set; } = default!;
-
     [Timestamp]
     public byte[] RowVersion { get; set; } = default!;
 
