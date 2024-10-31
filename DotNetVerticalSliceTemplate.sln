@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{AE58203E-EC57-41AC-B296-48029C822A1B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{C6BE6BF8-3129-47FF-B863-017F19C303E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateways", "Gateways", "{DD5F016F-8D7D-4CE5-AE15-B1D7B7D14353}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{6AA880FF-F62C-4495-AB5D-2D368BE50203}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Product", "Product", "{568B270D-F5C3-4DF0-AB87-3C9479DE81F7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetVerticalSliceTemplate.Services.Product", "src\Services\Product\DotNetVerticalSliceTemplate.Services.Product\DotNetVerticalSliceTemplate.Services.Product.csproj", "{85D66C98-8EBA-4768-B5C6-D4784D9F2C6D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetVerticalSliceTemplate.Services.Product.Api", "src\Services\Product\DotNetVerticalSliceTemplate.Services.Product.Api\DotNetVerticalSliceTemplate.Services.Product.Api.csproj", "{7A2DF486-2E12-4B29-91F5-B9CD7BE7678B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{2B1F36FC-E4A2-4628-8CCE-6E28A68F2B58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetVerticalSliceTemplate.BuildingBlocks.Application", "src\BuildingBlocks\DotNetVerticalSliceTemplate.BuildingBlocks.Application\DotNetVerticalSliceTemplate.BuildingBlocks.Application.csproj", "{72B9DECA-3D90-47B0-AC0D-D4BD83975162}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetVerticalSliceTemplate.BuildingBlocks.CrossCuttingConcerns", "src\BuildingBlocks\DotNetVerticalSliceTemplate.BuildingBlocks.CrossCuttingConcerns\DotNetVerticalSliceTemplate.BuildingBlocks.CrossCuttingConcerns.csproj", "{08BD14F3-7D90-47B8-B0B2-EB9ABCD970A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetVerticalSliceTemplate.BuildingBlocks.Domain", "src\BuildingBlocks\DotNetVerticalSliceTemplate.BuildingBlocks.Domain\DotNetVerticalSliceTemplate.BuildingBlocks.Domain.csproj", "{C3A4E1D6-6702-4637-8006-EE7DF0549EC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetVerticalSliceTemplate.BuildingBlocks.Infrastructure", "src\BuildingBlocks\DotNetVerticalSliceTemplate.BuildingBlocks.Infrastructure\DotNetVerticalSliceTemplate.BuildingBlocks.Infrastructure.csproj", "{C9A78C6A-DD96-40F8-A810-112B98B30198}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{85D66C98-8EBA-4768-B5C6-D4784D9F2C6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85D66C98-8EBA-4768-B5C6-D4784D9F2C6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85D66C98-8EBA-4768-B5C6-D4784D9F2C6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85D66C98-8EBA-4768-B5C6-D4784D9F2C6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A2DF486-2E12-4B29-91F5-B9CD7BE7678B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A2DF486-2E12-4B29-91F5-B9CD7BE7678B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A2DF486-2E12-4B29-91F5-B9CD7BE7678B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A2DF486-2E12-4B29-91F5-B9CD7BE7678B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72B9DECA-3D90-47B0-AC0D-D4BD83975162}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72B9DECA-3D90-47B0-AC0D-D4BD83975162}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72B9DECA-3D90-47B0-AC0D-D4BD83975162}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72B9DECA-3D90-47B0-AC0D-D4BD83975162}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08BD14F3-7D90-47B8-B0B2-EB9ABCD970A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08BD14F3-7D90-47B8-B0B2-EB9ABCD970A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08BD14F3-7D90-47B8-B0B2-EB9ABCD970A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08BD14F3-7D90-47B8-B0B2-EB9ABCD970A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3A4E1D6-6702-4637-8006-EE7DF0549EC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3A4E1D6-6702-4637-8006-EE7DF0549EC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3A4E1D6-6702-4637-8006-EE7DF0549EC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3A4E1D6-6702-4637-8006-EE7DF0549EC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9A78C6A-DD96-40F8-A810-112B98B30198}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9A78C6A-DD96-40F8-A810-112B98B30198}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9A78C6A-DD96-40F8-A810-112B98B30198}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9A78C6A-DD96-40F8-A810-112B98B30198}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DD5F016F-8D7D-4CE5-AE15-B1D7B7D14353} = {AE58203E-EC57-41AC-B296-48029C822A1B}
+		{6AA880FF-F62C-4495-AB5D-2D368BE50203} = {AE58203E-EC57-41AC-B296-48029C822A1B}
+		{568B270D-F5C3-4DF0-AB87-3C9479DE81F7} = {6AA880FF-F62C-4495-AB5D-2D368BE50203}
+		{85D66C98-8EBA-4768-B5C6-D4784D9F2C6D} = {568B270D-F5C3-4DF0-AB87-3C9479DE81F7}
+		{7A2DF486-2E12-4B29-91F5-B9CD7BE7678B} = {568B270D-F5C3-4DF0-AB87-3C9479DE81F7}
+		{2B1F36FC-E4A2-4628-8CCE-6E28A68F2B58} = {AE58203E-EC57-41AC-B296-48029C822A1B}
+		{72B9DECA-3D90-47B0-AC0D-D4BD83975162} = {2B1F36FC-E4A2-4628-8CCE-6E28A68F2B58}
+		{08BD14F3-7D90-47B8-B0B2-EB9ABCD970A2} = {2B1F36FC-E4A2-4628-8CCE-6E28A68F2B58}
+		{C3A4E1D6-6702-4637-8006-EE7DF0549EC4} = {2B1F36FC-E4A2-4628-8CCE-6E28A68F2B58}
+		{C9A78C6A-DD96-40F8-A810-112B98B30198} = {2B1F36FC-E4A2-4628-8CCE-6E28A68F2B58}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1921FBC2-C5C8-4730-9E36-DBEF75832604}
+	EndGlobalSection
+EndGlobal
