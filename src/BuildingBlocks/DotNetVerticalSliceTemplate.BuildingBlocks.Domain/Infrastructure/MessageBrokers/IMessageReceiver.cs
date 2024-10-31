@@ -2,5 +2,5 @@
 
 public interface IMessageReceiver<TConsumer, out T>
 {
-    Task ReceiveAsync(Func<T, MetaData, Task> action, CancellationToken cancellationToken);
+    Task ReceiveAsync(Func<T, MetaData, Task> action, CancellationToken cancellationToken = default);
 }
