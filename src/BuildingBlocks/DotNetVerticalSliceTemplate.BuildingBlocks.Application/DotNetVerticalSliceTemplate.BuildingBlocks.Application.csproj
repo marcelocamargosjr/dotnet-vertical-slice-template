@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DotNetVerticalSliceTemplate.BuildingBlocks.CrossCuttingConcerns\DotNetVerticalSliceTemplate.BuildingBlocks.CrossCuttingConcerns.csproj" />
+    <ProjectReference Include="..\DotNetVerticalSliceTemplate.BuildingBlocks.Domain\DotNetVerticalSliceTemplate.BuildingBlocks.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
