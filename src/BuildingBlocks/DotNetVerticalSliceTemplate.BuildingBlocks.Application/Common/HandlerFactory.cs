@@ -8,7 +8,7 @@ namespace DotNetVerticalSliceTemplate.BuildingBlocks.Application.Common;
 
 internal class HandlerFactory
 {
-    private readonly List<Func<object, Type, IServiceProvider, object>> _handlerFactoriesPipeline = new List<Func<object, Type, IServiceProvider, object>>();
+    private readonly List<Func<object, Type, IServiceProvider, object>> _handlerFactoriesPipeline = [];
 
     public HandlerFactory(Type type)
     {
@@ -18,7 +18,7 @@ internal class HandlerFactory
 
     public object Create(IServiceProvider provider, Type handlerInterfaceType)
     {
-        object currentHandler = null;
+        object currentHandler = null!;
         foreach (var handlerFactory in _handlerFactoriesPipeline)
         {
             currentHandler = handlerFactory(currentHandler, handlerInterfaceType, provider);
@@ -35,9 +35,9 @@ internal class HandlerFactory
         {
             var attribute = attributes[i];
             var attributeType = attribute.GetType();
-            Type decoratorHandlerType = null;
-            var hasDecoratorHandler = (type.HasInterface(typeof(ICommandHandler<>)) && Mappings.AttributeToCommandHandler.TryGetValue(attributeType, out decoratorHandlerType))
-                                      || (type.HasInterface(typeof(IQueryHandler<,>)) && Mappings.AttributeToQueryHandler.TryGetValue(attributeType, out decoratorHandlerType));
+            Type decoratorHandlerType = null!;
+            var hasDecoratorHandler = (type.HasInterface(typeof(ICommandHandler<>)) && Mappings.AttributeToCommandHandler.TryGetValue(attributeType, out decoratorHandlerType!))
+                                      || (type.HasInterface(typeof(IQueryHandler<,>)) && Mappings.AttributeToQueryHandler.TryGetValue(attributeType, out decoratorHandlerType!));
 
             if (!hasDecoratorHandler)
             {
@@ -48,9 +48,10 @@ internal class HandlerFactory
         }
     }
 
-    private void AddHandlerFactory(Type handlerType, object attribute = null)
+    private void AddHandlerFactory(Type handlerType, object attribute = null!)
     {
         _handlerFactoriesPipeline.Add(CreateHandler);
+        return;
 
         object CreateHandler(object decoratingHandler, Type interfaceType, IServiceProvider provider)
         {

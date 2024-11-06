@@ -44,7 +44,7 @@ public class Dispatcher
     public async Task<T> DispatchAsync<T>(IQuery<T> query, CancellationToken cancellationToken = default)
     {
         var type = typeof(IQueryHandler<,>);
-        Type[] typeArgs = { query.GetType(), typeof(T) };
+        Type[] typeArgs = [query.GetType(), typeof(T)];
         var handlerType = type.MakeGenericType(typeArgs);
 
         dynamic handler = _provider.GetService(handlerType)!;

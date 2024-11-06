@@ -9,8 +9,8 @@ public class CrudService<T> : ICrudService<T>
     where T : Entity<Guid>, IAggregateRoot
 {
     private readonly IUnitOfWork _unitOfWork;
-    protected readonly IRepository<T, Guid> _repository;
-    protected readonly Dispatcher _dispatcher;
+    private readonly IRepository<T, Guid> _repository;
+    private readonly Dispatcher _dispatcher;
 
     public CrudService(IRepository<T, Guid> repository, Dispatcher dispatcher)
     {
