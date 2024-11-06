@@ -2,7 +2,7 @@
 
 public abstract class DatabaseRetryDecoratorBase
 {
-    protected DatabaseRetryAttribute DatabaseRetryOptions { get; set; }
+    protected DatabaseRetryAttribute DatabaseRetryOptions { get; init; }
 
     protected void WrapExecution(Action action)
     {

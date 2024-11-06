@@ -46,7 +46,7 @@ public static class ApplicationServicesExtensions
             typeof(GetEntititesQueryHandler<>),
             typeof(GetEntityByIdQueryHandler<>),
             typeof(AddOrUpdateEntityCommandHandler<>),
-            typeof(DeleteEntityCommandHandler<>),
+            typeof(DeleteEntityCommandHandler<>)
         };
 
         foreach (var aggregateRootType in aggregateRootTypes)
