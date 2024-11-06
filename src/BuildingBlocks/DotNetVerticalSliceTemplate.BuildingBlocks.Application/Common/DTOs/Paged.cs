@@ -4,5 +4,5 @@ public class Paged<T>
 {
     public long TotalItems { get; set; }
 
-    public List<T> Items { get; set; } = default!;
+    public required List<T> Items { get; set; }
 }

@@ -33,13 +33,13 @@ internal static class Mappings
         }
     }
 
-    public static readonly Dictionary<Type, Type> AttributeToCommandHandler = new Dictionary<Type, Type>();
+    public static readonly Dictionary<Type, Type> AttributeToCommandHandler = new();
 
-    public static readonly Dictionary<Type, Type> AttributeToQueryHandler = new Dictionary<Type, Type>();
+    public static readonly Dictionary<Type, Type> AttributeToQueryHandler = new();
 }
 
 [AttributeUsage(AttributeTargets.Class)]
 public sealed class MappingAttribute : Attribute
 {
-    public Type Type { get; set; } = default!;
+    public required Type Type { get; set; }
 }

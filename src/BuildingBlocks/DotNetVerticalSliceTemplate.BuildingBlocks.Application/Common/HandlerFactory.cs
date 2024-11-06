@@ -48,7 +48,7 @@ internal class HandlerFactory
         }
     }
 
-    private void AddHandlerFactory(Type handlerType, object attribute = null!)
+    private void AddHandlerFactory(Type handlerType, object? attribute = null)
     {
         _handlerFactoriesPipeline.Add(CreateHandler);
         return;
@@ -69,7 +69,7 @@ internal class HandlerFactory
         }
     }
 
-    private static object[] GetParameters(IEnumerable<ParameterInfo> parameterInfos, object current, object attribute, IServiceProvider provider)
+    private static object[] GetParameters(IEnumerable<ParameterInfo> parameterInfos, object current, object? attribute, IServiceProvider provider)
     {
         return parameterInfos.Select(GetParameter).ToArray();
 

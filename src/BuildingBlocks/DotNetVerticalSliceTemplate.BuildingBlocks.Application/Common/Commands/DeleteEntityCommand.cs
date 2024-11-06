@@ -6,7 +6,12 @@ namespace DotNetVerticalSliceTemplate.BuildingBlocks.Application.Common.Commands
 public class DeleteEntityCommand<TEntity> : ICommand
     where TEntity : Entity<Guid>, IAggregateRoot
 {
-    public TEntity Entity { get; set; } = default!;
+    public DeleteEntityCommand(TEntity entity)
+    {
+        Entity = entity;
+    }
+
+    public TEntity Entity { get; set; }
 }
 
 internal class DeleteEntityCommandHandler<TEntity> : ICommandHandler<DeleteEntityCommand<TEntity>>
