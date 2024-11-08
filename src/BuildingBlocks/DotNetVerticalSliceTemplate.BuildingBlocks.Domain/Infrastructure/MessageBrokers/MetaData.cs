@@ -2,11 +2,11 @@
 
 public class MetaData
 {
-    public string MessageId { get; set; } = string.Empty;
+    public required string MessageId { get; set; }
 
-    public string MessageVersion { get; set; } = string.Empty;
+    public required string MessageVersion { get; set; }
 
-    public string CorrelationId { get; set; } = string.Empty;
+    public required string CorrelationId { get; set; }
 
     public DateTimeOffset? CreationDateTime { get; set; }
 

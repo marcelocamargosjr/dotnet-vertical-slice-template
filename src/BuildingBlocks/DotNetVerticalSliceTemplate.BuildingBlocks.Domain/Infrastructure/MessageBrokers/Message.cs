@@ -5,9 +5,9 @@ namespace DotNetVerticalSliceTemplate.BuildingBlocks.Domain.Infrastructure.Messa
 
 public class Message<T>
 {
-    public MetaData MetaData { get; set; } = default!;
+    public required MetaData MetaData { get; set; }
 
-    public T Data { get; set; } = default!;
+    public required T Data { get; set; }
 
     public string SerializeObject()
     {

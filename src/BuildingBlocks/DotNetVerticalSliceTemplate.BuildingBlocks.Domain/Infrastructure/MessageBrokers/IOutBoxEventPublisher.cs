@@ -11,11 +11,11 @@ public interface IOutBoxEventPublisher
 
 public class PublishingOutBoxEvent
 {
-    public string Id { get; set; } = string.Empty;
+    public required string Id { get; set; }
 
-    public string EventType { get; set; } = string.Empty;
+    public required string EventType { get; set; }
 
-    public string EventSource { get; set; } = string.Empty;
+    public required string EventSource { get; set; }
 
-    public string Payload { get; set; } = string.Empty;
+    public required string Payload { get; set; }
 }

@@ -5,9 +5,9 @@ namespace DotNetVerticalSliceTemplate.BuildingBlocks.Domain.Entities;
 public abstract class AuditableEntity<TKey> : Entity<TKey>, ITrackable
 {
     [Timestamp]
-    public byte[] RowVersion { get; set; } = default!;
+    public required byte[] RowVersion { get; set; }
 
-    public string CreatedBy { get; set; } = string.Empty;
+    public required string CreatedBy { get; set; }
 
     public DateTimeOffset CreatedAt { get; set; }
 

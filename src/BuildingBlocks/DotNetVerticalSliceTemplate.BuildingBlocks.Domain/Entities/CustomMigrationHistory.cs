@@ -2,5 +2,5 @@
 
 public class CustomMigrationHistory : Entity<Guid>
 {
-    public string MigrationName { get; set; } = string.Empty;
+    public required string MigrationName { get; set; }
 }

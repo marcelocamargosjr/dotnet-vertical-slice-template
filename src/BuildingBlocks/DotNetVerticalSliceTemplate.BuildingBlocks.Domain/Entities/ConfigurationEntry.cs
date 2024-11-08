@@ -2,7 +2,7 @@
 
 public class ConfigurationEntry : Entity<Guid>
 {
-    public string Key { get; set; } = string.Empty;
+    public required string Key { get; set; }
 
-    public string Value { get; set; } = string.Empty;
+    public required string Value { get; set; }
 }
