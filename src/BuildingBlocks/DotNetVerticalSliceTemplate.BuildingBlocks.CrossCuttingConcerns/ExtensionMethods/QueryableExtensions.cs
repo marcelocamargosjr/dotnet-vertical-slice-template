@@ -1,6 +1,6 @@
 ﻿namespace DotNetVerticalSliceTemplate.BuildingBlocks.CrossCuttingConcerns.ExtensionMethods;
 
-public static class IQueryableExtensions
+public static class QueryableExtensions
 {
     public static IQueryable<T> Paged<T>(this IQueryable<T> source, int page, int pageSize)
     {
