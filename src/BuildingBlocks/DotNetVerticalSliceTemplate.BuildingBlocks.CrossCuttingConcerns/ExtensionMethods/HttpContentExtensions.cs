@@ -5,7 +5,7 @@ namespace DotNetVerticalSliceTemplate.BuildingBlocks.CrossCuttingConcerns.Extens
 
 public static class HttpContentExtensions
 {
-    public static async Task<T> ReadAs<T>(this HttpContent httpContent)
+    public static async Task<T?> ReadAs<T>(this HttpContent httpContent)
     {
         var json = await httpContent.ReadAsStringAsync();
 

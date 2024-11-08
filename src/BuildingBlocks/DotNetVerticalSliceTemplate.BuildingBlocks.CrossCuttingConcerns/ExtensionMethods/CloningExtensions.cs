@@ -8,10 +8,10 @@ namespace DotNetVerticalSliceTemplate.BuildingBlocks.CrossCuttingConcerns.Extens
 /// </summary>
 public static class CloningExtensions
 {
-    public static T ShallowClone<T>(this T source)
+    public static T? ShallowClone<T>(this T source)
     {
         var methodInfo = typeof(T).GetMethod("MemberwiseClone", BindingFlags.Instance | BindingFlags.NonPublic);
-        return (T)methodInfo.Invoke(source, null);
+        return (T)methodInfo?.Invoke(source, null)!;
     }
 
     /// <summary>
@@ -20,12 +20,12 @@ public static class CloningExtensions
     /// <typeparam name="T">The type of object being copied.</typeparam>
     /// <param name="source">The object instance to copy.</param>
     /// <returns>The copied object.</returns>
-    public static T DeepCloneJson<T>(this T source)
+    public static T? DeepCloneJson<T>(this T source)
     {
         // Don't serialize a null object, simply return the default for that object
         if (ReferenceEquals(source, null))
         {
-            return default(T);
+            return default;
         }
 
         return JsonSerializer.Deserialize<T>(JsonSerializer.Serialize(source));

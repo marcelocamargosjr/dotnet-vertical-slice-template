@@ -10,7 +10,7 @@ public static class StringExtensions
         return T.Parse(s, provider);
     }
 
-    public static bool TryParseTo<T>(this string s, IFormatProvider provider, out T result)
+    public static bool TryParseTo<T>(this string s, IFormatProvider provider, out T? result)
         where T : IParsable<T>
     {
         return T.TryParse(s, provider, out result);

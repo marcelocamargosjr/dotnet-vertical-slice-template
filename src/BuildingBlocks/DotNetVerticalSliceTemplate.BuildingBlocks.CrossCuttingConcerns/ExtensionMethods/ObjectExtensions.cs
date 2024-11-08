@@ -11,7 +11,7 @@ public static class ObjectExtensions
         {
             WriteIndented = true,
             DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
-            ReferenceHandler = ReferenceHandler.IgnoreCycles,
+            ReferenceHandler = ReferenceHandler.IgnoreCycles
         });
         return content;
     }
